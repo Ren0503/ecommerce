@@ -1,0 +1,51 @@
+.productCard {
+    .productCover {
+        background-color: #ededed;
+        height: 150px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img {
+            width: 120px;
+        }
+    }
+
+    small {
+        display: block;
+        font-size: 11px;
+        color: darken(white, 80%);
+    }
+
+    .productContent {
+        margin-top: 5px;
+
+        .productTopContent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .productPrice {
+                font-size: 14px;
+                font-weight: 500;
+                color: #a8a8a8;
+            }
+            .productReaction {
+                img {
+                    width: 15px;
+                    cursor: pointer;
+
+                    margin-left: 10px;
+                }
+            }
+        }
+        .productInformation {
+            margin: 5px 0;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}
