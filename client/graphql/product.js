@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
 
 export const GET_CATEGORIES = gql`
     query categoryQuery($name: String) {
@@ -8,7 +8,7 @@ export const GET_CATEGORIES = gql`
             count
         }
     }
-`;
+`
 
 export const CREATE_PRODUCT = gql`
     mutation createProductMutation(
@@ -26,7 +26,7 @@ export const CREATE_PRODUCT = gql`
             }
         }
     }
-`;
+`
 
 export const GET_PRODUCT = gql`
     query productQuery(
@@ -69,7 +69,7 @@ export const GET_PRODUCT = gql`
             }
         }
     }
-`;
+`
 
 export const DELETE_PRODUCT = gql`
     mutation deleteProductMutation($productId: ID!) {
@@ -77,7 +77,7 @@ export const DELETE_PRODUCT = gql`
             status
         }
     }
-`;
+`
 
 export const TOGGLE_WISH = gql`
     mutation toggleWish($productId: ID!) {
@@ -85,7 +85,7 @@ export const TOGGLE_WISH = gql`
             status
         }
     }
-`;
+`
 
 export const CREATE_CART = gql`
     mutation createCartMutation($productId: ID!, $quantity: Int) {
@@ -100,7 +100,7 @@ export const CREATE_CART = gql`
             }
         }
     }
-`;
+`
 
 export const UPDATE_CART = gql`
     mutation updateCartMutation($cartId: ID!, $quantity: Int!) {
@@ -115,7 +115,7 @@ export const UPDATE_CART = gql`
             }
         }
     }
-`;
+`
 
 export const DELETE_CART = gql`
     mutation deleteCartMutation($cartId: ID!) {
@@ -123,7 +123,7 @@ export const DELETE_CART = gql`
             status
         }
     }
-`;
+`
 
 export const GET_CART = gql`
     query cartQuery($name: String) {
@@ -143,7 +143,7 @@ export const GET_CART = gql`
             }
         }
     }
-`;
+`
 
 export const COMPLETE_PAYMENT = gql`
     mutation completePaymentMutation {
@@ -151,7 +151,7 @@ export const COMPLETE_PAYMENT = gql`
             status
         }
     }
-`;
+`
 
 export const GET_REQUEST_CART = gql`
     query requestCartQuery($name: String) {
@@ -173,4 +173,4 @@ export const GET_REQUEST_CART = gql`
             }
         }
     }
-`;
+`

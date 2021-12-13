@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from '@apollo/client'
 
 export const LOGIN = gql`
     mutation LoginMutation($email: String!, $password: String!) {
@@ -29,7 +29,7 @@ export const LOGIN = gql`
             }
         }
     }
-`;
+`
 
 export const REGISTER = gql`
     mutation RegisterMutation(
@@ -47,7 +47,7 @@ export const REGISTER = gql`
             message
         }
     }
-`;
+`
 
 export const ME = gql`
     query meQuery {
@@ -74,7 +74,7 @@ export const ME = gql`
             }
         }
     }
-`;
+`
 
 export const GET_ACCESS_USER = gql`
     mutation getAccessMutation($refresh: String!) {
@@ -82,7 +82,7 @@ export const GET_ACCESS_USER = gql`
             access
         }
     }
-`;
+`
 
 export const CREATE_BUSINESS = gql`
     mutation createBusinessMutation($name: String!) {
@@ -92,7 +92,7 @@ export const CREATE_BUSINESS = gql`
             }
         }
     }
-`;
+`
 
 export const UPLOAD_IMAGE = gql`
     mutation uploadImageMutation($image: Upload!) {
@@ -103,4 +103,4 @@ export const UPLOAD_IMAGE = gql`
             }
         }
     }
-`;
+`
